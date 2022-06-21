@@ -11,46 +11,29 @@
 <body>
     <header>
         <div>
-            <h1>
-                Horti em Casa
-            </h1>
+            <h1><b>Horti em Casa</b></h1>
         </div>
 
         <ul>
-            <a href="./index.html"><li>Início</li></a>
-            <a href="#"><li>Serviços</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#" id="inscrever"><li>Já tem uma conta?</li></a>
+            <a href tw-nav="./components/home.html"><li>INÍCIO</li></a>
+            <a href tw-nav="./components/servicesPage.html"><li>SERVIÇOS</li></a>
+            <a href tw-nav="./components/about.html"><li>SOBRE</li></a>
+            <a href tw-nav="./components/contact.html"><li>CONTATO</li></a>
+            <a href tw-nav="./components/login.html" id="inscrever"><li>JÁTEM UMA CONTA?</li></a>
         </ul>
     </header>
 
-    <main>
-        <aside>
-            <h2>
-                <span> 
-                    Faça Parte Agora
-                </span>
-            </h2>
-            <h2>
-                do Horti em Casa!
-            </h2>
-            <p>
-                O melhor lugar para encontrar os melhores produtos orgânicos da sua região! 
-                Apoie agricultores locais e encontre os melhores produtos perto de você!
-                Não tem nada melhor que nossa casa então venha para Horti em Casa
-            </p>
-            <form>
-                <input type = "text" id = "name" placeholder = "Nome">
-                <input type = "email" id = "email" placeholder = "E-mail">
-                <input type = "submit" value = "Quero Participar" id="submit">
-            </form>
-        </aside>
-        
-        <article>
-            <img src="components/images/legumes.png" alt = "legumes">
-        </article>
-    </main>
+    <section id="content"></section>
+
+    
+
+    <footer class="site-footer">Tecnologias WEB - Horti em Casa | IESB Sul</footer>
+
     <script src="js/script.js"></script>
+    <script src="js/transition.js"></script>
+    <script>
+        if (document.querySelector('body').offsetHeight > window.innerHeight)
+          document.querySelector('footer').classList.add('footer-relative');
+    </script>
 </body>
 </html>
